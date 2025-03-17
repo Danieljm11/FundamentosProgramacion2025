@@ -1,0 +1,87 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+
+}
+
+/* Estilos del Header */
+header {
+    background-color: #33353d;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-martillo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.logo-martillo h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo-martillo img {
+    width: 50px;
+    margin: 25px;
+}
+
+nav {
+    margin: 50px;
+
+}
+
+nav ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-header ul a {
+    margin: 15px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo-link {
+
+    text-decoration: none;
+
+}
+
+.footer{
+
+    background-color: #33353d;
+    width: 100%;
+    height: auto;
+
+}
+
+.footer h3{
+
+    color: white;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.lista-retos a{
+
+    font-size: 20px;
+    text-decoration: none;
+
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Reto 7</title>
+    <link href="css/reto7.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+
+<body>
+
+    <header>
+
+        <a class="logo-link" href="index.html">
+            <div class="logo-martillo">
+                <img src='imagenes/logo.png' alt="logo Martillo">
+                <h1>Inicio</h1>
+            </div>
+        </a>
+    </header>
+
+    <section class="fondo">
+        <h1 class="text-white text-center">Suiza</h1>
+    </section>
+
+    <section class="container bg-light">
+
+        <div class="row">
+
+            <div class="col-md-6 col-lg-6">
+
+                <div class="text-center pt-5">
+                    <!-- carga de la imagen mapeada con ID del mapa -->
+                    <img src="imagenes/suiza-reto-7.jpg" usemap="#image-map" class="img-fluid shadow img-thumbnail"
+                        alt="Suiza">
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-6">
+                <p class="pt-5">
+                    Suiza, un país sin salida al mar en Europa Central, se caracteriza por sus imponentes Alpes, sus
+                    encantadores pueblos y ciudades, y su rica historia y cultura.
+
+                    Los Alpes, que atraviesan el país de este a oeste, son la principal característica geográfica. El
+                    Dufourspitze, con 4.634 metros sobre el nivel del mar, es el pico más alto. Entre los Alpes y el
+                    Jura se encuentra la meseta suiza, la región más poblada, con numerosos lagos, ríos y bosques. El
+                    Jura es una cadena montañosa más pequeña que corre paralela a los Alpes a lo largo de la frontera
+                    norte.
+                </p>
+                <p class="">
+                    Suiza tiene un clima templado con cuatro estaciones bien diferenciadas. Los inviernos en las
+                    montañas son fríos y nevados, mientras que los veranos son cálidos y soleados, con temperaturas
+                    promedio entre 20 y 25 grados Celsius. El país es multilingüe, con el alemán como lengua más
+                    hablada, seguido del francés, italiano y romanche.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3 class="text-white text-center">
+            Derechos Reservados
+        </h3>
+    </footer>
+
+    <map name="image-map">
+        <area target="_blank" alt="Haga Click Aqui" title="Haga Click Aqui" href="https://definicion.de/montana/"
+            coords="158,65,34" shape="circle">
+        <area target="_blank" alt="Haga Click Aqui" title="Haga Click Aqui" href="https://definicion.de/cielo/"
+            coords="480,60,33" shape="circle">
+        <area target="_blank" alt="Haga Click Aqui" title="Haga Click Aqui" href="https://definicion.de/bandera/"
+            coords="300,170,33" shape="circle">
+    </map>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+</body>
+
+</html>

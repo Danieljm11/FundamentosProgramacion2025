@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Carga del framework-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Reto 6</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/reto6.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+
+        <a class="logo-link" href="index.html">
+            <div class="logo-martillo">
+                <img src='imagenes/logo.png' alt="logo Martillo">
+                <h1>Inicio</h1>
+            </div>
+        </a>
+    </header>
+
+    <section class="banner container-fluid">
+    </section>
+
+    <section class="container info ">
+        <div class="row ">
+            <div class="col-sm-4 col-md-6 col-lg-6 ">
+                <h2>YAMAHA MT-07</h2>
+                <div class="pt-2 "></div>
+                <p>La Yamaha MT-07 es una motocicleta naked de peso medio, conocida por su diseño agresivo, manejo ágil y motor bicilíndrico en línea de 689 cc.</p>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-6 ">
+                <div class="container text-center info2 ">
+                    <div class="info3 ">
+                        <h2>Desde:</h2>
+                        <h3>$16.000</h3>
+                        <button class="mb-3 mt-3 button1 ">Calcular financiamiento</button><br>
+                        <button class="button2 ">Contactar por whatsapp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container text-center pt-4 ">
+        <h2 class="pb-3 ">TODOS VOLTEARAN A VERTE</h2>
+        <p>SE EL PROTAGONISTA DE TU VIDA</p>
+
+
+    <!-- AQUI VA EL CODIGO Y EVENTO PROGRAMADO-->
+    
+    <div class="vehiculo pt-5">
+        <!-- id que representa cada carro -->
+        <img id="vehiculo" src="imagenes/mt07-azul.png" alt="Vehiculo con color especifico" class="img-fluid img-moto">
+    </div>
+    <h4> Selecciona el color favorito </h4>
+<!-- mb abreviatura de margin -->
+    <div class="col-12 mb-3">
+        <button class="btncirculos" style="background-color: #0D1C9E;" onclick="c1()"></button>
+        <button class="btncirculos" style="background-color: black;" onclick="c2()"></button>
+        <button class="btncirculos" style="background-color: #17A5A8" onclick="c3()"></button>
+    </div>
+
+    <!-- id que representa el color en texto -->
+    <h5 id="color">SUPER BLUE</h5>
+
+    </section>
+
+    <footer class="footer">
+        <p class="text-white text-center">
+            Derechos Reservados
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="js/reto6.js"></script>
+</body>
+
+</html>

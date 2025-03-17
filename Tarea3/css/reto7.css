@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+}
+
+.fondo {
+    background-color: #0e5279;
+}
+
+header {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+img {
+    width: 100%;
+}
+
+map {
+    max-width: 100%;
+}
