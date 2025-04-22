@@ -1,0 +1,551 @@
+body {
+
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+
+}
+
+/* Estilos del Header */
+header {
+    background-color: #1B264F;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-martillo-alklavo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.logo-martillo-alklavo h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.logo-martillo-alklavo img {
+    width: 50px;
+    margin: 25px;
+}
+
+nav {
+    margin: 50px;
+
+}
+
+nav ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-header ul a {
+    margin: 15px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo-link {
+
+    text-decoration: none;
+
+}
+
+h2 {
+
+    color: black;
+    font-size: 60px;
+    margin: 30px;
+
+}
+
+p {
+
+    font-size: 20px;
+
+}
+
+.main-container {
+
+    margin: 50px;
+
+}
+
+.information-container {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #576CA8;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.seccion-marcas {
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(/imagenes/fondo-marcas-populares.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    background-color: #d2d2d2;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.seccion-marcas h2 {
+
+    color: #fff;
+    background-color: #ffffff34;
+
+}
+
+.marcas-container {
+
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.marcas-main-container {
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+
+}
+
+.logo-marcas {
+
+    width: 300px;
+
+}
+
+.logo-marcas-2 {
+
+    width: 300px;
+
+}
+
+.marcas-container-2 {
+
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+.seccion-envio {
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(/imagenes/servicio-envio-productos.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    background-color: #d2d2d2;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.seccion-envio h2 {
+
+    color: #fff;
+    background-color: #ffffff34;
+
+}
+
+.information-container-envios {
+
+    margin: 25px;
+    background-color: #576CA8;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+
+}
+
+/* Footer estilos */
+
+.site-footer {
+    background-color: #1B264F;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #a8a8a8;
+}
+
+.footer-info {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+.site-footer hr.small {
+    margin: 20px 0;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: block;
+}
+
+.footer-links a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block;
+}
+
+.site-footer .social-icons {
+    text-align: right;
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #5c5c5e;
+}
+
+.copyright-text {
+    margin: 0;
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89;
+}
+
+.seccionInscripcion {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(/imagenes/fondo-sub.png);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    background-color: #d2d2d2;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.seccionInscripcion h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.seccionInscripcion .email {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+nav {
+    background-color: #1B264F;
+    padding: 0;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #1B264F;
+}
+
+/* Submenús */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1B264F;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 12px 16px;
+    color: #fff;
+}
+
+nav ul li ul li a:hover {
+    background-color: #1B264F;
+}
+
+/* Traductor */
+
+.language-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.language-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #FE6603;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.capa-menu,
+.capa-logo {
+    width: 50%;
+    text-align: center;
+    background-color: black;
+}
+
+.capa-logo img {
+    height: 150px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------SWITCH---------------------------------------*/
+.language-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.language-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*control slider switch*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FE6603;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/*fondo control chequeado por el usuario */
+input:checked+.slider {
+    background-color: #FE6603;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Texto de los 2 idiomas */
+.language-text {
+    position: relative;
+    top: 1px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #fff;
+}
