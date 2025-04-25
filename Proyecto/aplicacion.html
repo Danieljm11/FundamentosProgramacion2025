@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <title>Aplicacion Web - Martillo al Klavo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/aplicacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a class="logo-link" href="inicio.html">
+            <div class="logo-martillo-alklavo">
+                <img src='imagenes/logo.png' alt="logo Martillo al Klavo">
+                <h1>Martillo al Klavo</h1>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Manual de Usuario Servicio Envio.pdf" download class="btn-descarga-pdf">
+                        Descargar PDF
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a data-translate="optionMenu1" href="tour360.html">Tour 360</a>
+                </li>
+
+                <li>
+                    <a data-translate="optionMenu1" href="aplicacion.html">Serv. Transporte</a>
+                </li>
+
+                <li>
+                    <a data-translate="optionMenu2" href="#">Herr. Manuales</a>
+                    <ul>
+                        <li><a data-translate="optionMenu3" href="martillos.html">Martillos</a></li>
+                        <li><a data-translate="optionMenu4" href="#">Desatornilladores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a data-translate="optionMenu5" href="#">Herr. Electricas</a>
+                    <ul>
+                        <li><a data-translate="optionMenu6" href="taladros.html">Taladros</a></li>
+                        <li><a data-translate="optionMenu7" href="#">Cierras</a></li>
+                    </ul>
+                </li>
+                <li><a data-translate="optionMenu8" href="contacto.html">Contacto</a></li>
+
+                <!-- COMPONENTE SWITCH -->
+                <li>
+                    <!-- Texto de idioma -->
+                    <span class="language-text">Es</span>
+
+                    <!-- clase del control language-switch -->
+                    <label class="language-switch" for="languageSwitch">
+                        <!-- control checkbox -->
+                        <input type="checkbox" id="languageSwitch" onclick="changeLanguage()">
+                        <!-- slider del control -->
+                        <span class="slider round"></span>
+                    </label>
+
+
+                    <!-- Texto de los 2 idiomas -->
+                    <span class="language-text">En</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="text-center primerHeader">Bienvenidos a nuestro servicio de trasnporte</h1>
+
+    <p class="text-center">A continuacion se presenta un elemento en donde se podra seleccionar y crear su pedido
+        personalizado de acuerdo a sus necesidades y en donde le gustaria recibir el pedido. Importante mencionar que
+        ofrecemos serviciode carga liviana y carga pesada. Al ser mas de 3 productos, se convierte en carga pesada y se
+        hara un cobro de 3000 colones adicionales.</p>
+
+    <div class="contenedorFormularioTransporte">
+        <div class="form-container">
+            <h1>Servicio de Transporte</h1>
+
+            <div class="section">
+                <label for="material">Seleccione el material:</label>
+                <select id="material">
+                    <option value="cemento" data-price="3000">Cemento - ₡3000</option>
+                    <option value="piedra" data-price="2500">Piedra - ₡2500</option>
+                    <option value="ceramica" data-price="4000">Cerámica - ₡4000</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label for="cantidad">Cantidad de paquetes:</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+
+            <div class="section">
+                <label for="provincia">Provincia de entrega:</label>
+                <select id="provincia">
+                    <option value="San Jose">San José (gratis)</option>
+                    <option value="Alajuela">Alajuela - ₡3000</option>
+                    <option value="Heredia">Heredia - ₡3000</option>
+                    <option value="Cartago">Cartago (gratis)</option>
+                    <option value="Guanacaste">Guanacaste - ₡3000</option>
+                    <option value="Puntarenas">Puntarenas - ₡3000</option>
+                    <option value="Limon">Limón - ₡3000</option>
+                </select>
+            </div>
+
+            <div class="total" id="total">Total a pagar: ₡0</div>
+
+            <button id="btnPagar" class="btn-pagar">Pagar</button>
+
+            <div id="formPago" class="pago-form" style="display: none;">
+                <h1>Datos de la Tarjeta</h1>
+                <label for="nombreTitular">Nombre del titular:</label>
+                <input type="text" id="nombreTitular" placeholder="Ej: Juan Pérez" required>
+
+                <label for="numeroTarjeta">Número de tarjeta:</label>
+                <input type="text" id="numeroTarjeta" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+                <label for="fechaVencimiento">Fecha de vencimiento:</label>
+                <input type="month" id="fechaVencimiento" required>
+
+                <label for="codigoSeguridad">Código de seguridad (CVV):</label>
+                <input type="text" id="codigoSeguridad" maxlength="4" placeholder="123" required>
+
+                <button id="btnCompletar" class="btn-completar">Completar pago</button>
+            </div>
+
+            <!-- Modal -->
+            <div id="modalExito" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <p>🎉 ¡Su pedido ha sido completado con éxito!</p>
+                    <button id="btnCerrarPopup">Cerrar</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row footer-info">
+                <div class="col-sm-12 col-md-6">
+                    <h6 data-translate="title15">Acerca de Nosotros</h6>
+                    <p data-translate="p9" class="text-justify">En Martillo al Klavo, nos dedicamos a ofrecer una amplia
+                        gama de
+                        herramientas y materiales de construcción de la más alta calidad. Nuestro compromiso es
+                        proporcionar a profesionales y entusiastas del bricolaje los productos y el asesoramiento que
+                        necesitan para llevar a cabo sus proyectos con éxito. Con años de experiencia en el sector, nos
+                        enorgullece ser un referente de confianza en la comunidad.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6 data-translate="title16">Links de Accesso</h6>
+                    <ul class="footer-links">
+                        <li><a data-translate="optionMenu2" href="#">Herr. Manuales</a></li>
+                        <li><a data-translate="optionMenu5" href="#">Herr. Electricas</a></li>
+                        <li><a data-translate="optionMenu8" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by Daniel Cordero.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/aplicacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>
